@@ -4,7 +4,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 
-
+		<!--This function hides a div, pass the div name to it-->
 		<script type="text/javascript">
 			function toggle_visibility(id) {
 				var e = document.getElementById(id);
@@ -14,7 +14,7 @@
 				   e.style.display = 'block';
 			}
 		 </script>
-
+		<!--This function hides a div, pass the div name to it-->
 
 
 	</head>
@@ -22,30 +22,38 @@
 
 		<nav>
     		<ul>
+				<!--links to the other pages-->
         		<li><a href="/">Home</a></li>
-        		<li><a href="/assignments">Assignments</a></li>
+				<li><a href="/assignments">Assignments</a></li>
+				<!--links to the other pages-->
     		</ul>
 		</nav>
 		<div class="container">
     		<div class="blurb">
+				<!--Just a working title... -->
         		<h1>Curtis Michels' CS160 Assignments!</h1>
 				<h2>Here I will post finished assignments from class.</h2>
-
 				<h3>Reading questions:</h3>
 
 				<button onclick="toggle_visibility('readings');">Week 1-2</button>
+				<!--All the reading questions go here-->
 				<div id="readings" visibility: hidden>
 					Question 1 Ans
 				</div>
-					
+				<!--All the reading questions go here-->
+
 					<h3>Scratch asssignments:</h3>
+
 					<button onclick="toggle_visibility('scratches');">Week 1-2</button>
+					<!--All the scratch assignments go here-->
 					<div id="scratches" visibility: hidden>
 							<p>Assignment 1 (touch all 4 corners):</p>
 							<iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/176915589/?autostart=false" frameborder="0" allowfullscreen></iframe>
 							<p>Assignment 2: (ball moving through field)</p>
 							<iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/177524675/?autostart=false" frameborder="0" allowfullscreen></iframe>
 					</div>
+					<!--All the scratch assignments go here-->
+
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
