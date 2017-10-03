@@ -3,8 +3,18 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<script type="text/javascript">
+			function toggle_visibility(id) {
+				var e = document.getElementById(id);
+				if(e.style.display == 'block')
+				   e.style.display = 'none';
+				else
+				   e.style.display = 'block';
+			}
+		 </script>
 	</head>
 	<body>
+
 		<nav>
     		<ul>
         		<li><a href="/">Home</a></li>
@@ -16,6 +26,15 @@
     		<div class="blurb">
         		<h1>Curtis Michels' CS160 Assignments!</h1>
 				<p>Here I will post finished assignments from class.</p>
+
+				<p>Reading questions:</p>
+				<button onclick="toggle_visibility('question 1');">Question 1</button>
+				<div id="question 1" visibility: hidden>
+					Question 1 Ans
+					
+					</div>
+					
+
 				<p><b>Scratch practice assignment 1 (touch all 4 corners):</b></p>
 				      <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/176915589/?autostart=false" frameborder="0" allowfullscreen></iframe>
 					  <p><b>Scratch project week 2 assignment 2: (ball moving through field)</b></p>
@@ -28,6 +47,22 @@
         		<li><a href="https://github.com/bwukki">github</a></li>
 			</ul>
 		</footer>
+
+
+
+
+		<script type="text/javascript">
+   function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+   }
+</script>
+
+
+
 	</body>
 </html>
 
