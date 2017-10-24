@@ -68,58 +68,7 @@
 															<!--All the app inventor assignments go here-->
 															<div id="py4" visibility: hidden>
 																	<p>Assignment 4 (Rock, paper, scissors in Python):</p>
-																	<div class="code">
-																		<span class="Linq">from</span>&nbsp;random&nbsp;import&nbsp;*<br />
-																		#Start&nbsp;of&nbsp;function&nbsp;<span class="String">"rps"</span>&nbsp;(rock&nbsp;paper&nbsp;scissors)<br />
-																		def&nbsp;rps():<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;#chooses&nbsp;a&nbsp;random&nbsp;number&nbsp;between&nbsp;1&nbsp;and&nbsp;3,&nbsp;uses&nbsp;that&nbsp;to&nbsp;determine&nbsp;rock/paper/scissor&nbsp;choice<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;randint(1,3)<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;x&nbsp;==&nbsp;1:<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;<span class="String">"rock"</span><br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;x&nbsp;==&nbsp;2:<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;<span class="String">"paper"</span><br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">else</span>:<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;<span class="String">"scissors"</span><br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;y&nbsp;=&nbsp;input(<span class="String">"Rock,&nbsp;paper,&nbsp;or&nbsp;scissors?&nbsp;"</span>)<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;print(<span class="String">"I'm&nbsp;going&nbsp;to&nbsp;choose..."</span>,x)<br />
-																		<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;#checks&nbsp;<span class="Statement">for</span>&nbsp;a&nbsp;tie<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;x&nbsp;==&nbsp;y:&nbsp;<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(<span class="String">"Tie!"</span>)<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;x&nbsp;==&nbsp;<span class="String">"rock"</span>:<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;<span class="String">"Rock"</span><br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;x&nbsp;==&nbsp;<span class="String">"paper"</span>:<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;<span class="String">"Paper"</span><br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">else</span>:<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;=&nbsp;<span class="String">"Scissors"</span><br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;x&nbsp;==&nbsp;y:&nbsp;<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(<span class="String">"Tie!"</span>)<br />
-																		<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;#checks&nbsp;other&nbsp;win&nbsp;conditions&nbsp;&nbsp;&nbsp;&nbsp;<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;x&nbsp;==&nbsp;<span class="String">"Rock"</span>:<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;(y&nbsp;==&nbsp;<span class="String">"Scissors"</span>)&nbsp;or&nbsp;(y&nbsp;==&nbsp;<span class="String">"scissors"</span>):<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(<span class="String">"You&nbsp;lose!"</span>)<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;(y&nbsp;==&nbsp;<span class="String">"Paper"</span>)&nbsp;or&nbsp;(y&nbsp;==&nbsp;<span class="String">"paper"</span>):<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;(<span class="String">"You&nbsp;win!"</span>)<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;x&nbsp;==&nbsp;<span class="String">"Paper"</span>:<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;(y&nbsp;==&nbsp;<span class="String">"Rock"</span>)&nbsp;or&nbsp;(y&nbsp;==&nbsp;<span class="String">"rock"</span>):<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(<span class="String">"You&nbsp;lose!"</span>)<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;(y&nbsp;==&nbsp;<span class="String">"Scissors"</span>)&nbsp;or&nbsp;(y&nbsp;==&nbsp;<span class="String">"scissors"</span>):<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;(<span class="String">"You&nbsp;win!"</span>)<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;x&nbsp;==&nbsp;<span class="String">"Scissors"</span>:<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;(y&nbsp;==&nbsp;<span class="String">"Paper"</span>)&nbsp;or&nbsp;(y&nbsp;==&nbsp;<span class="String">"paper"</span>):<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(<span class="String">"You&nbsp;lose!"</span>)<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">if</span>&nbsp;(y&nbsp;==&nbsp;<span class="String">"Rock"</span>)&nbsp;or&nbsp;(y&nbsp;==&nbsp;<span class="String">"rock"</span>):<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;(<span class="String">"You&nbsp;win!"</span>)<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;rps()<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;#calls&nbsp;itself&nbsp;to&nbsp;loop&nbsp;endlessly<br />
-																		&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">return</span>;<br />
-																		#end&nbsp;of&nbsp;function&nbsp;rps<br />
-																		rps()
-																		</div>
+																<iframe src="https://pastebin.com/embed_iframe/f3mMTNcz" style="border:none;width:100%"></iframe>
 															</div>
 															<!--All the python assignments go here-->
 															
