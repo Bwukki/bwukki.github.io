@@ -23,9 +23,9 @@ f = -100
   for (let x = 0; x <= 79; x += 1) {
 	if (x%10 == 0) {
 		f = f+100
-		y = 0
+		y = Math.random()
 	  }
-    fill(y * 50, x * 4, y * 20, x);
+    fill(y * 50 * Math.random(), x * 4 * Math.random(), y * 20 * Math.random(), x);
     triangle(100*y, f+100, 100+100*y, f+100, 50+100*y, f)
 	y+=1
   }
