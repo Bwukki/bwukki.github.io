@@ -10,6 +10,7 @@ function setup() {
   cnv = createCanvas(1000, 800);
   centerCanvas();
   background(200, 200, 230);
+  stroke(0,0,0,0)
 }
 
 function windowResized() {
@@ -25,7 +26,7 @@ f = -100
 		f = f+100
 		y = Math.random()
 	  }
-    fill(y * 50 * Math.random(), x * 4 * Math.random(), y * 20 * Math.random(), x);
+    fill(y * 40 * Math.random()*mouseX, x * 5 * Math.random(), y * 20 * Math.random()+5*mouseY, Math.random()*Math.random()*Math.abs(0.5*mouseX+0.5*mouseY)+25);
     triangle(100*y, f+100, 100+100*y, f+100, 50+100*y, f)
 	y+=1
   }
