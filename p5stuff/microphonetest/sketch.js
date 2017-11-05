@@ -1,21 +1,17 @@
 var mic;
 var xPos = 0;
 var yPos = 0;
-var sensitivity = 5;
+var sensitivity = 3;
 
 function setup() {
   createCanvas(800, 600);
   mic = new p5.AudioIn();
   mic.start();
   frameRate(60);
-//
-
-
-//
 }
 
 function sensChange() {
- sensitivity = prompt("Please enter a microphone sensitivty between 1 and 20", "");
+ sensitivity = prompt("Please enter a microphone sensitivty between 1 and 20 (default is 3)", "");
   while (isNaN(sensitivity)) {
    sensitivity = prompt("Please only enter a number between 1 and 20", "");
   }
@@ -30,7 +26,7 @@ function sensChange() {
 
 
 function draw() {
-  if (yPos <= 0) { yPos = height-50}
+  if (yPos <= 0+50) { yPos = 0+50}
   background(200);
   var vol = mic.getLevel()*100*sensitivity
   xPos = xPos + vol
