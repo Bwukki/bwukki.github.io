@@ -25,8 +25,13 @@ f = -100
 	if (x%10 == 0) {
 		f = f+100
 		y = Math.random()
-	  }
-    fill(y * 40 * Math.random()*mouseX, x * 5 * Math.random(), y * 20 * Math.random()+5*mouseY, Math.random()*Math.random()*Math.abs(0.5*mouseX+0.5*mouseY)+25);
+    }
+     if (mouseIsPressed) {
+ fill(y * 40 * Math.random()*mouseX, x * 5 * Math.random(), y * 20 * Math.random()+5*mouseY, 50);
+  }
+ else {
+   fill(y * 40 * Math.random()*mouseX, x * 5 * Math.random(), y * 20 * Math.random()+5*mouseY, 500);
+  }
     triangle(100*y, f+100, 100+100*y, f+100, 50+100*y, f)
 	y+=1
   }
