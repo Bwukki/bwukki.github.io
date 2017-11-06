@@ -13,13 +13,13 @@ function setup() {
 function sensChange() {
  sensitivity = prompt("Please enter a microphone sensitivty between 1 and 20 (default is 3)", "");
   while (isNaN(sensitivity)) {
-   sensitivity = prompt("Please only enter a number between 1 and 20", "");
+   sensitivity = prompt("Please only enter a number between 1 (least sensitive) and 20 (most sensitive)", "");
   }
   while (sensitivity > 20) {
-   sensitivity = prompt("Please only enter a number from 1 to 20", "");
+   sensitivity = prompt("Please only enter a number from 1 (least sensitive) to 20 (most sensitive)", "");
   }
   while (sensitivity < 1) {
-   sensitivity = prompt("Please only enter a number from 1 to 20", "");
+   sensitivity = prompt("Please only enter a number from 1 (least sensitive) to 20 (most sensitive)", "");
   }
 
 }
