@@ -54,7 +54,7 @@ function draw() {
     yPos = height-50
   }
   background(200);
-  var vol = mic.getLevel()*100*sensitivity
+  var vol = mic.getLevel()*30*sensitivity
   //Updates the x position of the ball based on volume
   xPos = xPos + vol
   //Makes ball rise based on volume
