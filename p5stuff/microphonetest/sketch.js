@@ -10,14 +10,15 @@ function setup() {
   mic = new p5.AudioIn();
   mic.start();
   frameRate(60);
-  ob1x1 = width
+  ob1x1 = width;
   ob1y1 = 4/10 * height;
-  ob2x1 = width
+  ob2x1 = width;
   ob2y1 = 5/10 * height;
-  ob3x1 = width
-  ob3y1 = height-50
-  difficultyspeed = 10
-
+  ob3x1 = width;
+  ob3y1 = height-50;
+  difficultyspeed = 10;
+  timer = 0;
+  hiscore = 0;
 }
 
 function sensChange() {
@@ -37,15 +38,15 @@ function sensChange() {
 function fall() {
     //checks to see if the position of the ball is above and over the line
     shouldifall = 1
-    if (ob1x1 >= width/4-250 && ob1x1 <= width/4+100 && yPos >= ob1y1-50 && yPos <= ob1y1+20) {
+    if (ob1x1 >= width/4-210 && ob1x1 <= width/4+30 && yPos >= ob1y1-52 && yPos <= ob1y1) {
       
       shouldifall = 0
     }
-    if (ob2x1 >= width/4-250 && ob2x1 <= width/4+100 && yPos >= ob2y1-50 && yPos <= ob2y1+20) {
+    if (ob2x1 >= width/4-210 && ob2x1 <= width/4+30 && yPos >= ob2y1-52 && yPos <= ob2y1) {
      
       shouldifall = 0
     }
-    if (ob3x1 >= width/4-250 && ob3x1 <= width/4+100 && yPos >= ob3y1-50 && yPos <= ob3y1+20) {
+    if (ob3x1 >= width/4-210 && ob3x1 <= width/4+30 && yPos >= ob3y1-52 && yPos <= ob3y1) {
      
       shouldifall = 0
     }
@@ -84,11 +85,9 @@ function drawObstacle() {
 
 function draw() {
   //ceiling
-  if (yPos <= 0+50) { yPos = 0+50}
-  // floor
-  if (yPos > height-50) {
-    yPos = height-50
-  }
+  if (yPos <= 0+50) {
+     yPos = 0+50
+    }
   background(200);
   var vol = mic.getLevel()*20*sensitivity
   //Updates the x position of the ball based on volume
@@ -108,6 +107,20 @@ function draw() {
   ellipse(width/4, yPos, 100, 100);
   drawObstacle();
  fall();
+ textSize(32);
+ text(Math.round(timer*10)/10, 10, height-20);
+ fill(0, 102, 153);
+ timer = timer+1/60;
+ if ( timer > hiscore) {
+   hiscore = Math.round(timer*10)/10
+ }
+ text("High score: " + hiscore + " seconds", 10, 30);
+     // floor and its triggers
+     if (yPos >= height-50) {
+      yPos = height-50
+      timer = 0;
+      text("You failed", width/1.5, height/2);
+    }
 }
 
 
