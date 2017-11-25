@@ -119,6 +119,7 @@ function draw() {
      if (yPos >= height-50) {
       yPos = height-50
       timer = 0;
+      fill(200,0,0);
       text("You failed", width/1.5, height/2);
     }
 }
