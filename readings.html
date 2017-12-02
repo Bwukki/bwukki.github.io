@@ -331,7 +331,50 @@
 								<p><i>144 transistors/relays are required. Although in real life they’re exceptionally tiny.</i></p>
 								
 								</div>
+								<br>
+								<br>
+								<button onclick="toggle_visibility('readingscode2');">Week 10</button>
+								<div id="readingscode2" visibility: hidden>
+									<p><b>Chapter 15</b></p>
+									
+									<ol start="1" type="1"> <li>Define byte.</li>
+									</ol><p><i>A byte is a sequence of 8 bits. </i></p>
+									
+									<ol start="2" type="1"> <li>What is the range of an unsigned byte? A signed two's complement byte?</li>
+									</ol><p><i>Unsigned byte: [0,255], Signed byte: [-128,127]</i></p>
+									
+									<ol start="3" type="1"> <li>What does the X in the following binary number represent 1010<b>X</b>10101?</li>
+									</ol><p><i>The 32s column </i></p>
+									
+									<ol start="4" type="1"> <li>What is the base 16 number system called?</li>
+									</ol><p><i>Hexadecimal</i></p>
+									
+									<ol start="5" type="1"> <li>Why is base 16 a good choice for representing binary numbers?</li>
+									</ol><p><i>Each digit of a base 16 number represents half a byte, hexadecimal numbers can represent a lot of information in a short sequence, and converting from binary to hexadecimal is straightforward.</i></p>
+									
+									<ol start="6" type="1"> <li>What base 16 number is 101011000011? What is an easy way to determine this without </li>
+									</ol><p>using a calculator?</p>
+									
+									<p><i>Split it up into nibbles: 1010, 1100, 0011, then convert these values to hex; A, C, 3. The number in hexadecimal = AC3</i></p>
+									
+									<ol start="7" type="1"> <li>What does the X represent in the following base 16 number D4A<b>X</b>F0?</li>
+									</ol><p><i>The 256ths column </i></p>
+									
+									<ol start="8" type="1"> <li>The book describes how to convert decimal to base 2 or base 16. Research and describe a technique that allows conversion of decimal to any base (2-36).</li>
+									</ol><p><i>Take the number divided by the base you want to convert to raised to the power of the largest colum that divides into the number (for example, to convert 300 to binary you would start with the 2^8 column, since 256 is the largest power of 2 that goes into 300). Then, take the remainder of your division and divide that by the base you are converting to raised to the next largest column (to get to the next column we subtract one from the power each time, eg. We would do 2^7, then 2^6…in this example), and so forth until you get to the column base^0. As we get past base 10 we use the appropriate letter to represent our missing digits. (eg. 10 becomes A, 11 becomes B…). </i></p>
+									
+									<p><b>Chapter 16</b></p>
+									
+									<ol start="1" type="1"> <li>What do the prefix names kilo, mega, giga, tera, and peta represent in bytes and what were the Greek origins of the words?</li>
+									</ol><p><i>1 Kilobyte = 1024 bytes, 1 megabyte = 1,048,576 bytes, 1 gigabyte = 2^30 bytes, 1 terrabyte = 2^40 bytes, and 1 petabyte = 2^50 bytes</i></p>
+									
+									<p><i>Kilo comes from the Greek “Khilioi” and means a thousand, mega comes from “Megas” which means great, giga is from “Gigas” which means giant, tera originates from “Teras” which means monster, as far as I can tell peta does not come from a Greek word – but is instead from the International System of Units and means the fifth power of 1000. </i></p>
+									
+									<ol start="2" type="1"> <li>At the end of Chapter 16 the author reminds the reader about something that is "very important," what is this?</li>
+									</ol><p><i>Ram is reset when it loses power, and any data stored will be lost as everything switches off. </i></p>									
 								
+								</div>
+
 								<h2>Article discussion: "Big Ball of Mud"</h2>
 								<p>Link: <a href="http://www.wordyard.com/2007/09/16/mud/">Big Ball of Mud</a></p>
 								<button onclick="toggle_visibility('readingsarticle1');">Week 7</button>
