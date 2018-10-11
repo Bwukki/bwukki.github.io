@@ -3,11 +3,61 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<style>
+			.dropbtn {
+					background-color: #101010;
+					color: #999;
+					font-size: 16px;
+					border: none;
+					font-family:'Helvetica', 'Arial', 'Sans-Serif';
+   				padding: 0px;
+  			  list-style: none;
+  			  font-weight: bold;
+			}
+			
+			.dropdown {
+					position: relative;
+					display: inline-block;
+			}
+			
+			.dropdown-content {
+					display: none;
+					position: absolute;
+					background-color: #E7E7E7;
+					min-width: 160px;
+					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					font-family:'Helvetica', 'Arial', 'Sans-Serif';
+					z-index: 1;
+			}
+			
+			.dropdown-content a {
+					color: black;
+					padding: 12px 16px;
+					text-decoration: none;
+					font-family:'Helvetica', 'Arial', 'Sans-Serif';
+					display: block;
+			}
+			
+			.dropdown-content a:hover {background-color: #E7E7E7;}
+			
+			.dropdown:hover .dropdown-content {display: block;}
+			
+			.dropdown:hover .dropbtn {background-color: #101010;}
+			</style>
 	</head>
 <body>
 		<nav>
     		<ul>
-
+						<li><a href="/">Home</a></li>
+						<div class="dropdown">
+							<button class="dropbtn">ADT Reference</button>
+							<div class="dropdown-content">
+								<a href="#">Stacks</a>
+								<a href="#">Queues</a>
+								<a href="#">Dequeues</a>
+								<a href="#">Lists</a>
+							</div>
+						</div>
     		</ul>
 		</nav>
 		<div class="container">
