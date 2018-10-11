@@ -3,15 +3,47 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<style>
+			.dropbtn {
+					background-color: #4CAF50;
+					color: white;
+					padding: 16px;
+					font-size: 16px;
+					border: none;
+			}
+			
+			.dropdown {
+					position: relative;
+					display: inline-block;
+			}
+			
+			.dropdown-content {
+					display: none;
+					position: absolute;
+					background-color: #f1f1f1;
+					min-width: 160px;
+					box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					z-index: 1;
+			}
+			
+			.dropdown-content a {
+					color: black;
+					padding: 12px 16px;
+					text-decoration: none;
+					display: block;
+			}
+			
+			.dropdown-content a:hover {background-color: #ddd;}
+			
+			.dropdown:hover .dropdown-content {display: block;}
+			
+			.dropdown:hover .dropbtn {background-color: #3e8e41;}
+			</style>
 	</head>
 <body>
 		<nav>
     		<ul>
 						<li><a href="/">Home</a></li>
-						<li><a href="/schooling">Stack</a></li>
-						<li><a href="/readings">Queue</a></li>
-						<li><a href="/assignments">Dequeue</a></li>
-						<li><a href="/assignments">Lists</a></li>
     		</ul>
 		</nav>
 
@@ -19,10 +51,23 @@
 		<div class="container">
     		<div class="blurb">
 				<h2>Data Structures</h2>
+				<p>Quick Reference:</p>
+
+				<div class="dropdown">
+					<button class="dropbtn">Dropdown</button>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+
 				<p>Below are links to all of the exercises/assignment assigned during this course, split up by the week they were assigned.</p>
 				<li><a href="https://docs.google.com/document/d/1IQDNMMdMpj5s3C_AMDzl0KDAD_R2JxiyQ-MSysfgk8w/edit?usp=sharing">Notes</a></l>
 				<li><a href="week1.html">Week 1 Exercises</a></li>
 				<li><a href="week2.html">Week 2 Exercises</a></li>
+
+
 
 				<p></p>
     		</div><!-- /.blurb -->
