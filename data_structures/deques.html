@@ -54,7 +54,7 @@
 							<div class="dropdown-content">
 								<a href="stacks.html">Stacks</a>
 								<a href="queues.html">Queues</a>
-								<a href="dequeues.html">Dequeues</a>
+							</div><a href="dequeues.html">Deques</a>
 								<a href="lists.html">Lists</a>
 							</div>
 						</div>
@@ -64,14 +64,28 @@
 		  
 		<div class="container">
     		<div class="blurb">
-				<h2>Data Structures</h2>
-				<p>Below are links to all of the exercises/assignment assigned during this course, split up by the week they were assigned.</p>
-				<li><a href="https://docs.google.com/document/d/1IQDNMMdMpj5s3C_AMDzl0KDAD_R2JxiyQ-MSysfgk8w/edit?usp=sharing">Notes</a></l>
-				<li><a href="week1.html">Week 1 Exercises</a></li>
-				<li><a href="week2.html">Week 2 Exercises</a></li>
-				<li><a href="week3.html">Week 3 Exercises</a></li>
-
-
+				<h2>Deque</h2>
+				<p>Deques are an abstract data type with the following functions:</p>
+				<table style="width:100%">
+					<tr>
+					  <th>isEmpty()</th>
+					  <th>size</th>
+					  <th>addFront()</th>
+					  <th>addRear()</th>
+					  <th>removeFront()</th>
+					  <th>removeRear()</th>
+					</tr>
+					<tr>
+					  <td>Returns True/False</td>
+					  <td>Returns size of dequeu</td> 
+					  <td>Adds an item to the front of the deque</td>
+					  <td>Adds an item to the rear of the deque</td>
+					  <td>Returns and removes the front item in the deque</td>
+					  <td>Returns and removes the rearmost item in the deque</td>
+					</tr>
+				  </table>
+				  <p>Here is a simple implimentation of a deque in Python:</p>
+				  <iframe src="https://pastebin.com/embed_iframe/n1UwWTrq" style="border:none;height:800px;width:100%"></iframe>
 
 				<p></p>
     		</div><!-- /.blurb -->
