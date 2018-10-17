@@ -66,7 +66,28 @@
     		<div class="blurb">
 				<h2>Stacks</h2>
 				<img src="resources/dog.png" alt="stack.jpg" class="center">
-				  <iframe src="https://pastebin.com/embed_iframe/cCXDk24z" style="border:none;height:800px;width:100%"></iframe>
+				<div class="code">
+						#basic&nbsp;stack&nbsp;<span class="Statement">in</span>&nbsp;Python,&nbsp;<span class="Linq">from</span>&nbsp;InteractivePython<br />
+						<br />
+						<span class="ReferenceType">class</span>&nbsp;Stack:<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;__init__(self):<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.items&nbsp;=&nbsp;[]<br />
+						<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;isEmpty(self):<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">return</span>&nbsp;self.items&nbsp;==&nbsp;[]<br />
+						<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;push(self,&nbsp;item):<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.items.append(item)<br />
+						<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;pop(self):<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">return</span>&nbsp;self.items.pop()<br />
+						<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;peek(self):<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">return</span>&nbsp;self.items[len(self.items)-1]<br />
+						<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;size(self):<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Statement">return</span>&nbsp;len(self.items)
+						</div>
 
 				<p></p>
     		</div><!-- /.blurb -->
