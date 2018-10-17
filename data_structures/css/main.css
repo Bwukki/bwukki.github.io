@@ -8,6 +8,9 @@ body {
 th, td {
     padding: 100px;
 }
+table, th, td {
+    border: 1px solid #ffffff;
+}
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
